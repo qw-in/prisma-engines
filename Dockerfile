@@ -1,4 +1,4 @@
-FROM rust:1.48.0
+FROM rust:1.54.0
 MAINTAINER Julius de Bruijn <bruijn@prisma.io>
 
 ENV USER root
