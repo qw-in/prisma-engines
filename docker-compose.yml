@@ -145,7 +145,7 @@ services:
     tmpfs: /var/lib/mariadb
 
   vitess-test-5_7:
-    image: vitess/vttestserver:mysql57@sha256:96cb401d180fe054196b969adce928b83590842ec5e300cfb95fd602ec8e7494
+    image: vitess/vttestserver:mysql57@sha256:d31984c6158ea12d6827ad0af35640cd48123b809f06d3a8e86e819fb144230e
     restart: always
     ports:
       - 33577:33577
@@ -167,7 +167,7 @@ services:
       MYSQL_BIND_HOST: "0.0.0.0"
 
   vitess-shadow-5_7:
-    image: vitess/vttestserver:mysql57@sha256:96cb401d180fe054196b969adce928b83590842ec5e300cfb95fd602ec8e7494
+    image: vitess/vttestserver:mysql57@sha256:d31984c6158ea12d6827ad0af35640cd48123b809f06d3a8e86e819fb144230e
     restart: always
     ports:
       - 33578:33577
